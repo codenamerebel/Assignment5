@@ -15,6 +15,7 @@ class   CurrencyConverter
 {
     
     var USDAmount:Int;
+    let ConversionRates:ConversionRates;
     
     
     init()
@@ -25,7 +26,8 @@ class   CurrencyConverter
         //  I need to read in the currency conversion rates here
         //  Do I want to use a Dictionary
         
-        let ConversionRates = ConversionRates();
+        //  Why did it request this?  I'm not totally sure.   Will investigate later
+        ConversionRates = Assignment5.ConversionRates();
     }
     
     private func    convertWithConversionRate(rate:Double) -> Double
@@ -36,26 +38,26 @@ class   CurrencyConverter
     }
     
     
-    func convertEURO(USD:Int) -> Double
+    func convertEURO() -> Double
     {
-        return self.convertWithConversionRate(rate: ConversionRates().Euro.Rate);
+        return self.convertWithConversionRate(rate: ConversionRates.Euro.Rate);
     }
     
     
-    func convertGPB(USD:Int) -> Double
+    func convertGPB() -> Double
     {
-        return self.convertWithConversionRate(rate: ConversionRates().GPB.Rate);
+        return self.convertWithConversionRate(rate: ConversionRates.GPB.Rate);
     }
     
     
-    func convertJPY(USD:Int) -> Double
+    func convertJPY() -> Double
     {
-        return self.convertWithConversionRate(rate: ConversionRates().JPY.Rate);
+        return self.convertWithConversionRate(rate: ConversionRates.JPY.Rate);
     }
     
-    func convertKRW(USD:Int) -> Double
+    func convertKRW() -> Double
     {
-        return self.convertWithConversionRate(rate: ConversionRates().KRW.Rate);
+        return self.convertWithConversionRate(rate: ConversionRates.KRW.Rate);
     }
     
     

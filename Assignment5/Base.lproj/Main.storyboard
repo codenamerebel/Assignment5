@@ -40,7 +40,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J36-ne-luX">
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xha-av-jrr">
                                                         <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="105.33333333333333"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -48,6 +48,7 @@
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstItem="awt-na-B7j" firstAttribute="centerX" secondItem="2sg-8J-78f" secondAttribute="centerX" multiplier="0.5" id="ATP-7D-YAH"/>
+                                                    <constraint firstItem="xha-av-jrr" firstAttribute="centerX" secondItem="2sg-8J-78f" secondAttribute="centerX" id="azB-OS-Rpe"/>
                                                 </constraints>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GHp-Xt-gWw" userLabel="Convert1View">
@@ -59,7 +60,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fwk-pC-i96">
+                                                    <switch opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fwk-pC-i96">
                                                         <rect key="frame" x="256.66666666666669" y="36.999999999999972" width="51" height="31"/>
                                                     </switch>
                                                 </subviews>
@@ -80,7 +81,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cdU-1f-Cef">
+                                                    <switch opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cdU-1f-Cef">
                                                         <rect key="frame" x="256.66666666666669" y="37" width="51" height="31"/>
                                                     </switch>
                                                 </subviews>
@@ -101,7 +102,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e19-lf-qz7">
+                                                    <switch opaque="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e19-lf-qz7">
                                                         <rect key="frame" x="256.66666666666669" y="37" width="51" height="31"/>
                                                     </switch>
                                                 </subviews>
@@ -122,7 +123,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IiR-w5-j4c">
+                                                    <switch opaque="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IiR-w5-j4c">
                                                         <rect key="frame" x="256.66666666666669" y="37" width="51" height="31"/>
                                                     </switch>
                                                 </subviews>
@@ -158,11 +159,11 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="Convert1Switch" destination="Fwk-pC-i96" id="pHi-DS-bik"/>
-                        <outlet property="Convert2Switch" destination="cdU-1f-Cef" id="07H-0p-RUF"/>
-                        <outlet property="Convert3Switch" destination="e19-lf-qz7" id="rk0-kK-ox9"/>
-                        <outlet property="Convert4Switch" destination="IiR-w5-j4c" id="U7N-48-5bP"/>
-                        <outlet property="USDInput" destination="J36-ne-luX" id="3xC-Rp-Bqq"/>
+                        <outlet property="EuroSwitch" destination="Fwk-pC-i96" id="FjX-bw-GFl"/>
+                        <outlet property="GPBSwitch" destination="cdU-1f-Cef" id="BoF-aC-RCu"/>
+                        <outlet property="JPYSwitch" destination="e19-lf-qz7" id="cJY-RU-nl8"/>
+                        <outlet property="KRWSwitch" destination="IiR-w5-j4c" id="jXF-2w-05v"/>
+                        <outlet property="USDInput" destination="xha-av-jrr" id="qy1-c6-zM6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
