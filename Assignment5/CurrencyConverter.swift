@@ -25,11 +25,7 @@ class   CurrencyConverter
         //  I need to read in the currency conversion rates here
         //  Do I want to use a Dictionary
         
-        let ConversionRatesPath:String = Bundle.main.path(forResource: "ConversionRates", ofType:"pList")!;
-        let ConversionDictrionary:NSDictionary = NSDictionary(contentsOfFile: ConversionRatesPath)!;
-        
-        
-        
+        let ConversionRates = ConversionRates();
     }
     
     private func    convertWithConversionRate(rate:Double) -> Double
@@ -40,26 +36,26 @@ class   CurrencyConverter
     }
     
     
-    func convertCurrency1(USD:Int) -> Double
+    func convertEURO(USD:Int) -> Double
     {
-        return self.convertWithConversionRate(rate:132);
+        return self.convertWithConversionRate(rate: ConversionRates().Euro.Rate);
     }
     
     
-    func convertCurrency2(USD:Int) -> Double
+    func convertGPB(USD:Int) -> Double
     {
-        return self.convertWithConversionRate(rate:132);
+        return self.convertWithConversionRate(rate: ConversionRates().GPB.Rate);
     }
     
     
-    func convertCurrency3(USD:Int) -> Double
+    func convertJPY(USD:Int) -> Double
     {
-        return self.convertWithConversionRate(rate:132);
+        return self.convertWithConversionRate(rate: ConversionRates().JPY.Rate);
     }
     
-    func convertCurrency4(USD:Int) -> Double
+    func convertKRW(USD:Int) -> Double
     {
-        return self.convertWithConversionRate(rate:132);
+        return self.convertWithConversionRate(rate: ConversionRates().KRW.Rate);
     }
     
     

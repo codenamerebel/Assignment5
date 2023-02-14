@@ -14,7 +14,7 @@
 		A27CA57D29956CF60074AD56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A27CA57C29956CF60074AD56 /* Assets.xcassets */; };
 		A27CA58029956CF60074AD56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27CA57E29956CF60074AD56 /* LaunchScreen.storyboard */; };
 		A27CA588299982320074AD56 /* CurrencyConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27CA587299982320074AD56 /* CurrencyConverter.swift */; };
-		A27CA58A299AE36E0074AD56 /* ConversionRates.plist in Resources */ = {isa = PBXBuildFile; fileRef = A27CA589299AE36E0074AD56 /* ConversionRates.plist */; };
+		A27CA58C299BCEC20074AD56 /* ConversionRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27CA58B299BCEC20074AD56 /* ConversionRates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		A27CA57F29956CF60074AD56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A27CA58129956CF60074AD56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A27CA587299982320074AD56 /* CurrencyConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverter.swift; sourceTree = "<group>"; };
-		A27CA589299AE36E0074AD56 /* ConversionRates.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ConversionRates.plist; sourceTree = "<group>"; };
+		A27CA58B299BCEC20074AD56 /* ConversionRates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionRates.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +68,7 @@
 				A27CA57E29956CF60074AD56 /* LaunchScreen.storyboard */,
 				A27CA58129956CF60074AD56 /* Info.plist */,
 				A27CA587299982320074AD56 /* CurrencyConverter.swift */,
-				A27CA589299AE36E0074AD56 /* ConversionRates.plist */,
+				A27CA58B299BCEC20074AD56 /* ConversionRates.swift */,
 			);
 			path = Assignment5;
 			sourceTree = "<group>";
@@ -131,7 +131,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A27CA58A299AE36E0074AD56 /* ConversionRates.plist in Resources */,
 				A27CA58029956CF60074AD56 /* LaunchScreen.storyboard in Resources */,
 				A27CA57D29956CF60074AD56 /* Assets.xcassets in Resources */,
 				A27CA57B29956CF30074AD56 /* Main.storyboard in Resources */,
@@ -148,6 +147,7 @@
 				A27CA57829956CF30074AD56 /* ViewController.swift in Sources */,
 				A27CA588299982320074AD56 /* CurrencyConverter.swift in Sources */,
 				A27CA57429956CF30074AD56 /* AppDelegate.swift in Sources */,
+				A27CA58C299BCEC20074AD56 /* ConversionRates.swift in Sources */,
 				A27CA57629956CF30074AD56 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
