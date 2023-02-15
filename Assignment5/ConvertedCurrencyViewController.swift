@@ -19,12 +19,61 @@ class ConvertedCurrencyViewController: UIViewController {
     @IBOutlet   var ConvertedJPYStackView:UIStackView!;
     @IBOutlet   var ConvertedKRWStackView:UIStackView!;
     
+    var convertedEUROValue:String? = nil;
+    var convertedGRBValue:String? = nil;
+    var convertedJPYValue:String? = nil;
+    var convertedKRWValue:String? = nil;
     
-    override func viewDidLoad() {
+    
+    override func viewDidLoad()
+    {
         
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        
+        
+        if( convertedEUROValue != nil )
+        {
+            ConvertedEUROValueLabel.text = convertedEUROValue;
+        }
+        
+        else
+        {
+            ConvertedEUROStackView.isHidden = true;
+        }
+        
+        
+        if( convertedGRBValue != nil )
+        {
+            ConvertedGRBValueLabel.text = convertedGRBValue;
+        }
+        
+        else
+        {
+            ConvertedGRBStackView.isHidden = true;
+        }
+        
+        if( convertedJPYValue != nil )
+        {
+            ConvertedJPYValueLabel.text = convertedJPYValue;
+        }
+        
+        else
+        {
+            ConvertedJPYStackView.isHidden = true;
+        }
+        
+        if( convertedKRWValue != nil )
+        {
+            ConvertedKRWValueLabel.text = convertedKRWValue;
+        }
+        
+        else
+        {
+            ConvertedKRWStackView.isHidden = true;
+        }
+        
     }
     
 

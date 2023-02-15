@@ -30,71 +30,50 @@ class ViewController: UIViewController {
         if(segue.identifier == "Conversion Segue" )
         {
 
-            var convertedCurrencyViewController = segue.destination as! ConvertedCurrencyViewController
+            let convertedCurrencyViewController = segue.destination as! ConvertedCurrencyViewController
                         
+    
+            //  Let's set up the conversions
+            let CurrencyConverter:CurrencyConverter = CurrencyConverter();
+       
+                
+            //  I need to do some checks to see if this value is even correct in the field.  For now let's get it to work
+            let USDValue:Int = Int(self.USDInput.text!)!;
+            CurrencyConverter.USDAmount = USDValue;
             
+            if( self.EuroSwitch.isOn == true )
+            {
+                //  Set the label on the next view
+                convertedCurrencyViewController.convertedEUROValue = String(format: "€%.2f", CurrencyConverter.convertEURO())
+            }
             
-            print(convertedCurrencyViewController.debugDescription)
+            if( self.GPBSwitch.isOn == true )
+            {
+                //  Set the label on the next view
+                convertedCurrencyViewController.convertedGRBValue = String(format: "£%.2f", CurrencyConverter.convertGPB())
+            }
             
+            if( self.JPYSwitch.isOn == true )
+            {
+                //  Set the label on the next view
+                convertedCurrencyViewController.convertedJPYValue = String(format: "¥%.2f", CurrencyConverter.convertJPY())
+            }
+            
+            if( self.KRWSwitch.isOn == true )
+            {
+                //  Set the label on the next view
+                convertedCurrencyViewController.convertedKRWValue = String(format: "₩%.2f", CurrencyConverter.convertKRW())
+            }
+                
+           
         }
       
         
         
-        //  Let's set up the conversions
-        let CurrencyConverter:CurrencyConverter = CurrencyConverter();
-   
-            
-        //  I need to do some checks to see if this value is even correct in the field.  For now let's get it to work
-        var USDValue:Int = Int(self.USDInput.text!)!;
-        CurrencyConverter.USDAmount = USDValue;
-        
-        
-        if( self.EuroSwitch.isOn == true )
-        {
-            //  Set the label on the next view
-            //  Hide view if it is not switched on
-            print(CurrencyConverter.convertEURO())
-        }
-        
-        else
-        {
-            //  Hide the stackview for this currency
-        }
-        
-        if( self.GPBSwitch.isOn == true )
-        {
-            print(CurrencyConverter.convertGPB())
-        }
-        
-        else
-        {
-            //  Hide the stackview for this currency
-        }
-        
-        if( self.JPYSwitch.isOn == true )
-        {
-            print(CurrencyConverter.convertJPY());
-        }
-        
-        else
-        {
-            //  Hide the stackview for this currency
-        }
-        
-        if( self.KRWSwitch.isOn == true )
-        {
-            print(CurrencyConverter.convertKRW())
-        }
-            
-        else
-        {
-            //  Hide the stackview for this currency
-        }
+
+
                 
     }
-@IBAction func test()
-    {
-        self.performSegue(withIdentifier: "Conversion Segue", sender: self)
-    }
+
 }
 
