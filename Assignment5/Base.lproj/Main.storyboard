@@ -282,7 +282,7 @@
                         <outlet property="ConvertedGRBStackView" destination="ebn-kn-M5g" id="AFK-fC-lJZ"/>
                         <outlet property="ConvertedGRBValueLabel" destination="UgH-4c-S8n" id="mpb-4J-FBa"/>
                         <outlet property="ConvertedJPYStackView" destination="Km7-wv-oQn" id="76q-FC-2D8"/>
-                        <outlet property="ConvertedJPYValueLabel" destination="UgH-4c-S8n" id="hDJ-bs-V7d"/>
+                        <outlet property="ConvertedJPYValueLabel" destination="wTZ-E7-Gv9" id="tiP-5s-4iP"/>
                         <outlet property="ConvertedKRWStackView" destination="rrc-vT-CKj" id="YnG-D1-GVh"/>
                         <outlet property="ConvertedKRWValueLabel" destination="rBF-Ub-dQi" id="OcJ-0y-JJL"/>
                         <outlet property="USDAmountValueLabel" destination="obT-gp-xsT" id="1V9-Jr-d3f"/>
