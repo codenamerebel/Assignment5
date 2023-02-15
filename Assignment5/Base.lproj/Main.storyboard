@@ -48,7 +48,8 @@
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstItem="awt-na-B7j" firstAttribute="centerX" secondItem="2sg-8J-78f" secondAttribute="centerX" multiplier="0.5" id="ATP-7D-YAH"/>
-                                                    <constraint firstItem="xha-av-jrr" firstAttribute="centerX" secondItem="2sg-8J-78f" secondAttribute="centerX" id="azB-OS-Rpe"/>
+                                                    <constraint firstItem="awt-na-B7j" firstAttribute="centerY" secondItem="2sg-8J-78f" secondAttribute="centerY" id="C4X-t9-Wlx"/>
+                                                    <constraint firstItem="xha-av-jrr" firstAttribute="centerY" secondItem="2sg-8J-78f" secondAttribute="centerY" id="Hoz-sC-Xh8"/>
                                                 </constraints>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GHp-Xt-gWw" userLabel="Convert1View">
