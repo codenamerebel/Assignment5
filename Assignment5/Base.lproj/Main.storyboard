@@ -284,6 +284,7 @@
                         <outlet property="ConvertedJPYValueLabel" destination="UgH-4c-S8n" id="hDJ-bs-V7d"/>
                         <outlet property="ConvertedKRWStackView" destination="rrc-vT-CKj" id="YnG-D1-GVh"/>
                         <outlet property="ConvertedKRWValueLabel" destination="rBF-Ub-dQi" id="OcJ-0y-JJL"/>
+                        <outlet property="USDAmountValueLabel" destination="obT-gp-xsT" id="1V9-Jr-d3f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G5r-pJ-1nP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

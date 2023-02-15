@@ -13,6 +13,7 @@ class ConvertedCurrencyViewController: UIViewController {
     @IBOutlet   var ConvertedGRBValueLabel:UILabel!;
     @IBOutlet   var ConvertedJPYValueLabel:UILabel!;
     @IBOutlet   var ConvertedKRWValueLabel:UILabel!;
+    @IBOutlet   var USDAmountValueLabel:UILabel!;
     
     @IBOutlet   var ConvertedEUROStackView:UIStackView!;
     @IBOutlet   var ConvertedGRBStackView:UIStackView!;
@@ -24,6 +25,8 @@ class ConvertedCurrencyViewController: UIViewController {
     var convertedJPYValue:String? = nil;
     var convertedKRWValue:String? = nil;
     
+    var USDAmountValue:String! = "0";
+    
     
     override func viewDidLoad()
     {
@@ -31,47 +34,48 @@ class ConvertedCurrencyViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        self.USDAmountValueLabel.text = USDAmountValue;
         
         
-        if( convertedEUROValue != nil )
+        if( self.convertedEUROValue != nil )
         {
-            ConvertedEUROValueLabel.text = convertedEUROValue;
+            self.ConvertedEUROValueLabel.text = convertedEUROValue;
         }
         
         else
         {
-            ConvertedEUROStackView.isHidden = true;
+            self.ConvertedEUROStackView.isHidden = true;
         }
         
         
-        if( convertedGRBValue != nil )
+        if( self.convertedGRBValue != nil )
         {
-            ConvertedGRBValueLabel.text = convertedGRBValue;
-        }
-        
-        else
-        {
-            ConvertedGRBStackView.isHidden = true;
-        }
-        
-        if( convertedJPYValue != nil )
-        {
-            ConvertedJPYValueLabel.text = convertedJPYValue;
+            self.ConvertedGRBValueLabel.text = convertedGRBValue;
         }
         
         else
         {
-            ConvertedJPYStackView.isHidden = true;
+            self.ConvertedGRBStackView.isHidden = true;
         }
         
-        if( convertedKRWValue != nil )
+        if( self.convertedJPYValue != nil )
         {
-            ConvertedKRWValueLabel.text = convertedKRWValue;
+            self.ConvertedJPYValueLabel.text = convertedJPYValue;
         }
         
         else
         {
-            ConvertedKRWStackView.isHidden = true;
+            self.ConvertedJPYStackView.isHidden = true;
+        }
+        
+        if( self.convertedKRWValue != nil )
+        {
+            self.ConvertedKRWValueLabel.text = convertedKRWValue;
+        }
+        
+        else
+        {
+            self.ConvertedKRWStackView.isHidden = true;
         }
         
     }

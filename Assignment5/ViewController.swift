@@ -22,6 +22,48 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    func    validateUSDValueEntry() -> Bool
+    {
+        
+        
+        let USDInputValue:String = self.USDInput.text ?? ""
+        
+        if( self.USDInput.text! == "")
+        {
+            //  If nothing is entered than we need to display this Error
+            var errorMessageAlert = UIAlertController(title: "Attention", message: "Please enter a USD value to convert", preferredStyle: .alert)
+            let OKAlertButton = UIAlertAction(title: "OK", style: .cancel, handler:{ (action) -> Void in})
+            errorMessageAlert.addAction(OKAlertButton)
+            self.present(errorMessageAlert, animated: true, completion: nil)
+
+            //  Since we do not have a valid input tell the view we should not segue due to bad inputs
+            return false;
+        }
+        
+        if( Int(USDInputValue) == nil )
+        {
+            //  If nothing is entered than we need to display this Error
+            var errorMessageAlert = UIAlertController(title: "Attention", message: "Please do not enter a decimal amount.  Please enter a value number", preferredStyle: .alert)
+            let OKAlertButton = UIAlertAction(title: "OK", style: .cancel, handler:{ (action) -> Void in})
+            errorMessageAlert.addAction(OKAlertButton)
+            self.present(errorMessageAlert, animated: true, completion: nil)
+
+            //  Since we do not have a valid input tell the view we should not segue due to bad inputs
+            return false;
+        }
+        
+        
+        return true;
+    }
+    
+    
+    override    func    shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool
+    {
+        return validateUSDValueEntry();
+        
+    }
+
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) 
     {
         //  I'll need this later, but being lazy right now and not dealing with this
@@ -39,8 +81,12 @@ class ViewController: UIViewController {
                 
             //  I need to do some checks to see if this value is even correct in the field.  For now let's get it to work
             let USDValue:Int = Int(self.USDInput.text!)!;
+            
+            convertedCurrencyViewController.USDAmountValue = String(format:"$%d", USDValue);
             CurrencyConverter.USDAmount = USDValue;
             
+            
+            //  Set the rates for the values with the converted rates
             if( self.EuroSwitch.isOn == true )
             {
                 //  Set the label on the next view
