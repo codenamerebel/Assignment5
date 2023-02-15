@@ -64,16 +64,32 @@
 			children = (
 				A27CA57329956CF30074AD56 /* AppDelegate.swift */,
 				A27CA57529956CF30074AD56 /* SceneDelegate.swift */,
-				A27CA57729956CF30074AD56 /* ViewController.swift */,
+				A27CA58E299D545C0074AD56 /* View */,
 				A27CA57929956CF30074AD56 /* Main.storyboard */,
 				A27CA57C29956CF60074AD56 /* Assets.xcassets */,
 				A27CA57E29956CF60074AD56 /* LaunchScreen.storyboard */,
 				A27CA58129956CF60074AD56 /* Info.plist */,
-				A27CA587299982320074AD56 /* CurrencyConverter.swift */,
-				A27CA58B299BCEC20074AD56 /* ConversionRates.swift */,
-				A25819D3299C89540024FCF1 /* ConvertedCurrencyViewController.swift */,
+				A27CA58D299D544F0074AD56 /* Model */,
 			);
 			path = Assignment5;
+			sourceTree = "<group>";
+		};
+		A27CA58D299D544F0074AD56 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A27CA587299982320074AD56 /* CurrencyConverter.swift */,
+				A27CA58B299BCEC20074AD56 /* ConversionRates.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A27CA58E299D545C0074AD56 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A27CA57729956CF30074AD56 /* ViewController.swift */,
+				A25819D3299C89540024FCF1 /* ConvertedCurrencyViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
