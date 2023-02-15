@@ -141,7 +141,8 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Convert"/>
                                                 <connections>
-                                                    <segue destination="pUF-eD-z3x" kind="presentation" identifier="Conversion Segue" id="crt-d9-8y5"/>
+                                                    <action selector="test" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="rJl-xY-pos"/>
+                                                    <segue destination="pUF-eD-z3x" kind="presentation" identifier="Conversion Segue" id="lQh-9E-ch3"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -170,10 +171,10 @@
             </objects>
             <point key="canvasLocation" x="-515" y="-13"/>
         </scene>
-        <!--View Controller-->
+        <!--Converted Currency View Controller-->
         <scene sceneID="GfZ-o7-UBf">
             <objects>
-                <viewController id="pUF-eD-z3x" sceneMemberID="viewController">
+                <viewController id="pUF-eD-z3x" customClass="ConvertedCurrencyViewController" customModule="Assignment5" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wz8-Q9-XUn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -194,16 +195,16 @@
                                         <rect key="frame" x="0.0" y="200" width="375" height="508"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Xxx-Tf-eq8" userLabel="EUROStackView">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="169.33333333333334"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="127"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EURO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUr-CA-OI0">
-                                                        <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="169.33333333333334"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="127"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hc-sd-9wn">
-                                                        <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="169.33333333333334"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hc-sd-9wn" userLabel="EUROLabel">
+                                                        <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="127"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -211,33 +212,33 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ebn-kn-M5g" userLabel="GPBStackView">
-                                                <rect key="frame" x="0.0" y="169.33333333333331" width="375" height="169.33333333333331"/>
+                                                <rect key="frame" x="0.0" y="127" width="375" height="127"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GPB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZq-Df-j8R">
-                                                        <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="169.33333333333334"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="127"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UgH-4c-S8n">
-                                                        <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="169.33333333333334"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UgH-4c-S8n" userLabel="GPBLabel">
+                                                        <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="127"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Km7-wv-oQn" userLabel="JPYStackView">
-                                                <rect key="frame" x="0.0" y="338.66666666666663" width="375" height="0.0"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Km7-wv-oQn" userLabel="JPYStackView">
+                                                <rect key="frame" x="0.0" y="254" width="375" height="127"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JPY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bid-uz-Pyi">
-                                                        <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="0.0"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="127"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTZ-E7-Gv9">
-                                                        <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="0.0"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTZ-E7-Gv9" userLabel="JPYLabel">
+                                                        <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="127"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -245,16 +246,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="rrc-vT-CKj" userLabel="KRWStackView">
-                                                <rect key="frame" x="0.0" y="338.66666666666663" width="375" height="169.33333333333337"/>
+                                                <rect key="frame" x="0.0" y="381" width="375" height="127"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KRW" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9c-VO-Y88">
-                                                        <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="169.33333333333334"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="127"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rBF-Ub-dQi">
-                                                        <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="169.33333333333334"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rBF-Ub-dQi" userLabel="KRWLabel">
+                                                        <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="127"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -275,6 +276,16 @@
                             <constraint firstItem="Awh-hq-RL7" firstAttribute="trailing" secondItem="Jv1-47-SUR" secondAttribute="trailing" id="jtc-OB-R1g"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ConvertedEUROStackView" destination="Xxx-Tf-eq8" id="mHd-I5-0bX"/>
+                        <outlet property="ConvertedEUROValueLabel" destination="5hc-sd-9wn" id="ebl-8v-HM8"/>
+                        <outlet property="ConvertedGRBStackView" destination="ebn-kn-M5g" id="AFK-fC-lJZ"/>
+                        <outlet property="ConvertedGRBValueLabel" destination="UgH-4c-S8n" id="mpb-4J-FBa"/>
+                        <outlet property="ConvertedJPYStackView" destination="Km7-wv-oQn" id="76q-FC-2D8"/>
+                        <outlet property="ConvertedJPYValueLabel" destination="UgH-4c-S8n" id="hDJ-bs-V7d"/>
+                        <outlet property="ConvertedKRWStackView" destination="rrc-vT-CKj" id="YnG-D1-GVh"/>
+                        <outlet property="ConvertedKRWValueLabel" destination="rBF-Ub-dQi" id="OcJ-0y-JJL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G5r-pJ-1nP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

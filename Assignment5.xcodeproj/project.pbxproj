@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A25819D4299C89540024FCF1 /* ConvertedCurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25819D3299C89540024FCF1 /* ConvertedCurrencyViewController.swift */; };
 		A27CA57429956CF30074AD56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27CA57329956CF30074AD56 /* AppDelegate.swift */; };
 		A27CA57629956CF30074AD56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27CA57529956CF30074AD56 /* SceneDelegate.swift */; };
 		A27CA57829956CF30074AD56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27CA57729956CF30074AD56 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A25819D3299C89540024FCF1 /* ConvertedCurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertedCurrencyViewController.swift; sourceTree = "<group>"; };
 		A27CA57029956CF30074AD56 /* Assignment5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27CA57329956CF30074AD56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A27CA57529956CF30074AD56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				A27CA58129956CF60074AD56 /* Info.plist */,
 				A27CA587299982320074AD56 /* CurrencyConverter.swift */,
 				A27CA58B299BCEC20074AD56 /* ConversionRates.swift */,
+				A25819D3299C89540024FCF1 /* ConvertedCurrencyViewController.swift */,
 			);
 			path = Assignment5;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				A27CA588299982320074AD56 /* CurrencyConverter.swift in Sources */,
 				A27CA57429956CF30074AD56 /* AppDelegate.swift in Sources */,
 				A27CA58C299BCEC20074AD56 /* ConversionRates.swift in Sources */,
+				A25819D4299C89540024FCF1 /* ConvertedCurrencyViewController.swift in Sources */,
 				A27CA57629956CF30074AD56 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

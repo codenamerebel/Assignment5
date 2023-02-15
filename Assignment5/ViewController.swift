@@ -22,11 +22,22 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) 
     {
         //  I'll need this later, but being lazy right now and not dealing with this
-        let indetifier:String = "Conversion Segue"
-        
+        //let indetifier:String = "Conversion Segue"
+   
+        if(segue.identifier == "Conversion Segue" )
+        {
+
+            var convertedCurrencyViewController = segue.destination as! ConvertedCurrencyViewController
+                        
+            
+            
+            print(convertedCurrencyViewController.debugDescription)
+            
+        }
+      
         
         
         //  Let's set up the conversions
@@ -81,6 +92,9 @@ class ViewController: UIViewController {
         }
                 
     }
-
+@IBAction func test()
+    {
+        self.performSegue(withIdentifier: "Conversion Segue", sender: self)
+    }
 }
 
