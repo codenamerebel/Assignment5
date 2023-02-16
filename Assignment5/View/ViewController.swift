@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         if( self.USDInput.text! == "")
         {
             //  If nothing is entered than we need to display this Error
-            let errorMessageAlert = UIAlertController(title: "Attention", message: "Please enter a USD value to convert", preferredStyle: .alert)
+            let errorMessageAlert = UIAlertController(title: "Attention", message: "Please enter an USD value to convert", preferredStyle: .alert)
             let OKAlertButton = UIAlertAction(title: "OK", style: .cancel, handler:{ (action) -> Void in})
             errorMessageAlert.addAction(OKAlertButton)
             self.present(errorMessageAlert, animated: true, completion: nil)
