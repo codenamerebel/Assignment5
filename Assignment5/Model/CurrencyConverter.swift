@@ -5,7 +5,7 @@
 //  Created by Brad Payne on 2/12/23.
 //
 //
-//      All Conversion rates are accurate as of ENTER DATE HERE
+//      All Conversion rates are accurate as of 2/15/2023
 //
 //
 //
